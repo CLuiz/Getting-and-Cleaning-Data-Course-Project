@@ -1,0 +1,18 @@
+---
+title: "CodeBook"
+author: "CLuiz"
+date: "April 25, 2015"
+output: html_document
+---
+
+This document explains the variable names used in run_analysis.R
+
+
+Variables:
+
+1. Xtest, Ytest, Ytrain, Xtrain, subtest, subtrain, activities, and features contain the raw data from the file package.
+2. XFull, YFull, and subfull are the merged full data sets for x, y, and subject information, respectively.
+3. full is the merged set of x, y, and subject data.
+4. MeanStd contains all the column numbers in the data set containing mean or std.
+5. labels is used to store the text values of the data in MeanStd and apply it to the full dataset.
+6. tidy is a tidy dataset of containing the average of mean and standard deviations values across subjects and activities.
