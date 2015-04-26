@@ -1,0 +1,29 @@
+---
+title: "readme"
+author: "CLuiz"
+date: "April 25, 2015"
+output: html_document
+---
+
+# Getting and Cleaning Data Course Project
+
+This repository contains the documentation for the course project of Getting and Cleaning Data.
+
+The dataset can be found here: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+All data files must be present in the working directory for run_analysis.R to function
+
+# Included files:
+
+- CodeBook.md describes the variables used in the analysis.
+- run_analysis.R contains the scripts used to clean and process that data.
+- The "plyr" package is required for the script run_analysis.R
+- The final tidy dataset is named tidy.txt and was uploaded via the assignment page.
+
+# Analysis process
+
+1. The data was read into r and train/test sets were merged using cbind and rbind.  
+2. The observations for both mean and standard deviation were then subsetted.
+3. Next, true activity names were inserted in place of the numerical values in the original data set.
+4. The names of the variables were then cleaned up to be human understandable and readable.
+5. Finally, a tidy dataset was created with the average values of each variable for each subject and activity.
